@@ -1,6 +1,7 @@
 """
 text embeddings and semantic distances
 """
+import sys
 import os
 import numpy as np
 from openai import OpenAI
@@ -8,6 +9,8 @@ from sklearn.metrics.pairwise import cosine_distances
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+SYS_SUCCESS = 0
+SYS_FAILURE = 1
 
 def read_sentences(file_path):
     """ assumes file exists """
@@ -62,7 +65,7 @@ def main():
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         print("Error: OPENAI_API_KEY environment variable is not set.")
-        return
+        sys.exit(SYS_FAILURE)
     client = OpenAI(api_key=api_key)
     sentences = read_sentences("sentences.txt")
     print(f"loaded {len(sentences)} sentences")
@@ -79,6 +82,7 @@ def main():
             print(f"distance between \"{sent1_short}\" and \"{sent2_short}\" : {distance:.4f}")
     print("\ngenerating distance matrix visualization...")
     plot_distance_matrix(sentences, distances)
+    sys.exit(SYS_SUCCESS)
 
 if __name__ == "__main__":
     main()
