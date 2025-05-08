@@ -1,0 +1,10 @@
+Euler's identity, e^(iπ) + 1 = 0, is often considered one of the most beautiful equations in mathematics.
+Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse equals the sum of squares of the other two sides.
+Calculus is the mathematical study of continuous change and was developed independently by Newton and Leibniz.
+Einstein's theory of relativity revolutionized our understanding of space, time, and gravity.
+Quantum mechanics describes the behavior of matter and energy at the atomic and subatomic scale.
+Thermodynamics govern the transfer of heat and energy within physical systems.
+Standard Model of particle physics categorizes all known elementary particles and their interactions.
+Mary Shelley's Frankenstein explores themes of ambition, creation, and the consequences of scientific discovery.
+Jane Austen's Pride and Prejudice explores themes of class, marriage, and personal growth in 19th century England.
+Charles Dickens books often portrayed the harsh realities of Victorian-era England.
