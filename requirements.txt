@@ -2,3 +2,6 @@ openai
 scikit-learn
 seaborn
 pylint
+faiss-cpu
+llama-index
+llama-index-vector-stores-faiss
