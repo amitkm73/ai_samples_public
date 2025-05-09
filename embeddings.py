@@ -23,7 +23,7 @@ def get_embeddings(client, sentences):
     embeddings = []
     for sentence in sentences:
         response = client.embeddings.create(
-            model="text-embedding-3-small",
+            model="text-embedding-3-large",
             input=sentence
         )
         embeddings.append(response.data[0].embedding)
